@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_reverse" id="227" x="101" y="49">
+  <block type="movement_reverse" id="227" x="216" y="94">
     <next>
       <block type="robot_delay" id="229" inline="true">
         <value name="DELAY">
