@@ -2,11 +2,6 @@
   <block type="movement_reverse" id="227" x="101" y="49">
     <next>
       <block type="robot_delay" id="229" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="236">
-            <field name="NUM">5000</field>
-          </block>
-        </value>
         <next>
           <block type="movement_reverse" id="241">
             <next>
