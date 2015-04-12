@@ -15,6 +15,20 @@
                 <field name="NUM">1000</field>
               </block>
             </value>
+            <next>
+              <block type="movement_setmotors" id="100" inline="true">
+                <value name="BOTHMOVLEFT">
+                  <block type="math_number" id="107">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <value name="BOTHMOVRIGHT">
+                  <block type="math_number" id="108">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+              </block>
+            </next>
           </block>
         </next>
       </block>
