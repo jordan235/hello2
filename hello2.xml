@@ -1,52 +1,52 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="32" inline="false" x="151" y="158">
-    <field name="MODE">UNTIL</field>
-    <value name="NUMBER">
-      <block type="math_number" id="177">
-        <field name="NUM">0</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_forward" id="10">
+  <block type="movement_reverse" id="227" x="101" y="49">
+    <next>
+      <block type="robot_delay" id="229" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="236">
+            <field name="NUM">5000</field>
+          </block>
+        </value>
         <next>
-          <block type="robot_delay" id="41" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="42">
-                <field name="NUM">1000</field>
-              </block>
-            </value>
+          <block type="movement_reverse" id="241">
             <next>
-              <block type="movement_setmotors" id="100" inline="true">
-                <value name="BOTHMOVLEFT">
-                  <block type="math_number" id="107">
+              <block type="robot_delay" id="243" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="239">
                     <field name="NUM">0</field>
                   </block>
                 </value>
-                <value name="BOTHMOVRIGHT">
-                  <block type="math_number" id="108">
-                    <field name="NUM">4</field>
-                  </block>
-                </value>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
-    </statement>
-    <next>
-      <block type="movement_forward" id="187">
-        <next>
-          <block type="robot_delay" id="198" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="199">
-                <field name="NUM">2000</field>
-              </block>
-            </value>
-            <next>
-              <block type="oled_cleardisplay" id="217">
                 <next>
-                  <block type="oled_drawtext" id="208">
-                    <field name="TEXT">stop</field>
+                  <block type="movement_reverse" id="242">
+                    <next>
+                      <block type="robot_delay" id="245" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="238">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_reverse" id="240">
+                            <next>
+                              <block type="robot_delay" id="247" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="237">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_cleardisplay" id="257">
+                                    <next>
+                                      <block type="movement_stop" id="268"></block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
